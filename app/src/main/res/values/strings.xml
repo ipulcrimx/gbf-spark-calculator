@@ -8,4 +8,5 @@
     <string name="total_10draw_ticket_for_spark">30</string>
     <string name="result_desc">You need 0 more crystals or 0 more tickets to spark</string>
     <string name="count">Count</string>
+    <string name="zero">0</string>
 </resources>
