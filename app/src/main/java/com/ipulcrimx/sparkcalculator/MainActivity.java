@@ -9,15 +9,15 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private EditText _crystalEditText;
-    private EditText _ticketEditText;
-    private EditText _10ticketEditText;
-    private TextView _resultText;
-    private Button _countButton;
+    EditText _crystalEditText;
+    EditText _ticketEditText;
+    EditText _10ticketEditText;
+    TextView _resultText;
+    Button _countButton;
 
-    private int _totalCrystals;
-    private int _totalTickets;
-    private int _total10Tickets;
+    int _totalCrystals;
+    int _totalTickets;
+    int _total10Tickets;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -34,9 +34,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         _countButton.setOnClickListener(this);
     }
 
-    protected int GetCrystalNeeded(int crystal, int tickets, int ticket10)
+    @Override
+    public void onClick(View v)
     {
-        return (300 - GetTotalDraw(crystal, tickets, ticket10)) * 300;
+        _totalCrystals = Integer.parseInt(_crystalEditText.getText().toString());
+        _totalTickets = Integer.parseInt(_ticketEditText.getText().toString());
+        _total10Tickets = Integer.parseInt((_10ticketEditText.getText().toString()));
+
+        int xtal = GetTicketNeeded(_totalCrystals, _totalTickets, _total10Tickets) * 300;
+        int tix = GetTicketNeeded(_totalCrystals, _totalTickets, _total10Tickets);
+        int tot = GetTotalDraw(_totalCrystals, _totalTickets, _total10Tickets);
+
+        _resultText.setText("You can draw " + tot + " times now.\nYou need " + xtal + " more crystals or " + tix +" tickets to spark");
     }
 
     protected int GetTicketNeeded(int crystal, int tickets, int ticket10)
@@ -50,19 +59,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tickets = tickets + (ticket10 * 10);
 
         return tickets + crystal;
-    }
-
-    @Override
-    public void onClick(View v)
-    {
-        _totalCrystals = Integer.parseInt(_crystalEditText.getText().toString());
-        _totalTickets = Integer.parseInt(_ticketEditText.getText().toString());
-        _total10Tickets = Integer.parseInt((_10ticketEditText.getText().toString()));
-
-        int xtal = GetCrystalNeeded(_totalCrystals, _totalTickets, _total10Tickets);
-        int tix = GetTicketNeeded(_totalCrystals, _totalTickets, _total10Tickets);
-        int tot = GetTotalDraw(_totalCrystals, _totalTickets, _total10Tickets);
-
-        _resultText.setText("You can draw " + tot + " times now.\nYou need " + xtal + " more crystals or " + tix +" tickets to spark");
     }
 }
