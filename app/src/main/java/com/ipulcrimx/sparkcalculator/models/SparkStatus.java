@@ -1,5 +1,7 @@
 package com.ipulcrimx.sparkcalculator.models;
 
+import android.util.Log;
+
 public class SparkStatus {
     private int crystal;
     private int ticket;
@@ -18,10 +20,10 @@ public class SparkStatus {
 
     public int GetTotalDraw()
     {
-        crystal = crystal / 300;
-        ticket = ticket + (ticket10 * 10);
+        int drawFromCrystal = crystal / 300;
+        int drawFromTicket = ticket + (ticket10 * 10);
 
-        return ticket + crystal;
+        return drawFromCrystal + drawFromTicket;
     }
 
     public int getCrystal() {
