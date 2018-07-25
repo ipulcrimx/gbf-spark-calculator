@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button _countButton;
 
     SparkStatus _sparkStatus;
-    DailyLogin _dailyLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -33,7 +32,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         _resultText = findViewById(R.id.result_text);
         _countButton = findViewById(R.id.count_button);
 
-        _dailyLogin = new DailyLogin();
         _countButton.setOnClickListener(this);
     }
 
@@ -44,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int totalTickets = Integer.parseInt(_ticketEditText.getText().toString());
         int total10Tickets = Integer.parseInt((_10ticketEditText.getText().toString()));
 
-        _sparkStatus = new SparkStatus(totalCrystals,totalTickets, total10Tickets);
+        _sparkStatus = new SparkStatus(this, totalCrystals,totalTickets, total10Tickets, 0);
         int xtal = _sparkStatus.GetTicketNeeded() * 300;
         int tix = _sparkStatus.GetTicketNeeded();
         int tot = _sparkStatus.GetTotalDraw();
