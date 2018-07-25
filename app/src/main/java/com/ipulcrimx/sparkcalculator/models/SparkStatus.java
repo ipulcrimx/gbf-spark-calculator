@@ -17,6 +17,9 @@ public class SparkStatus {
 
     public transient DailyLogin _dailyLogin;
 
+    public SparkStatus() {
+    }
+
     public SparkStatus(MainActivity mainAct, int crystal, int ticket, int ticket10, int day) {
 
         this.crystal = crystal;
@@ -42,7 +45,6 @@ public class SparkStatus {
 
 
 //region Setter and Getter
-
     public int getCrystal() {
         return crystal;
     }
@@ -65,6 +67,16 @@ public class SparkStatus {
 
     public void setTicket10(int ticket10) {
         this.ticket10 = ticket10;
+    }
+
+    public String ToString()
+    {
+        String strTemp = "";
+
+        strTemp +="Crystal: " + crystal + "\n";
+        strTemp +="Ticket: " + ticket + ", 10 Ticket: " + ticket10;
+
+        return strTemp;
     }
 //endregion
 }
