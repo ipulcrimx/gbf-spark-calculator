@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.ipulcrimx.sparkcalculator.models.RewardSource.DailyLogin;
 import com.ipulcrimx.sparkcalculator.models.SparkStatus;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button _countButton;
 
     SparkStatus _sparkStatus;
+    DailyLogin _dailyLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         _resultText = findViewById(R.id.result_text);
         _countButton = findViewById(R.id.count_button);
 
+        _dailyLogin = new DailyLogin();
         _countButton.setOnClickListener(this);
     }
 

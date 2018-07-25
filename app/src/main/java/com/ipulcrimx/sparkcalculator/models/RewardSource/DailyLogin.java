@@ -1,4 +1,4 @@
-package com.ipulcrimx.sparkcalculator.models;
+package com.ipulcrimx.sparkcalculator.models.RewardSource;
 
 import com.ipulcrimx.sparkcalculator.utils.RewardType;
 
@@ -30,4 +30,7 @@ public class DailyLogin {
     }
 
     public int GetReward()
+    {
+        return -1;
+    }
 }
