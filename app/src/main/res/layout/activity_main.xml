@@ -18,9 +18,9 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="0dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginEnd="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
             android:text="@string/totalCrystalOwned" />
 
         <EditText
@@ -31,15 +31,14 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="7dp"
+            android:autofillHints="@string/zero"
             android:ems="10"
-            android:hint="@string/crystal_for_spark"
-            android:text="@string/zero"
             android:inputType="number"
             android:visibility="visible"
-            android:autofillHints="" tools:targetApi="o" />
+            tools:targetApi="o" />
 
         <TextView
             android:id="@+id/total_single_ticket_text"
@@ -62,14 +61,13 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="7dp"
             android:layout_marginEnd="8dp"
+            android:autofillHints="@string/zero"
             android:ems="10"
-            android:hint="@string/total_ticket_for_spark"
-            android:text="@string/zero"
             android:inputType="number"
             android:visibility="visible"
-            android:autofillHints="" tools:targetApi="o"/>
+            tools:targetApi="o" />
 
         <TextView
             android:id="@+id/total_10_tickets_text"
@@ -92,13 +90,12 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="7dp"
             android:layout_marginEnd="8dp"
             android:ems="10"
-            android:hint="@string/total_10draw_ticket_for_spark"
-            android:text="@string/zero"
+            android:autofillHints="@string/zero"
             android:inputType="number"
-            android:importantForAutofill="no" tools:targetApi="o"/>
+            tools:targetApi="o" />
 
         <TextView
             android:id="@+id/result_text"
@@ -117,12 +114,12 @@
             android:id="@+id/count_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/result_text"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_below="@+id/result_text"
             android:layout_marginStart="8dp"
-            android:layout_marginEnd="150dp"
+            android:layout_marginEnd="180dp"
             android:text="@string/count" />
     </RelativeLayout>
 </ScrollView>
