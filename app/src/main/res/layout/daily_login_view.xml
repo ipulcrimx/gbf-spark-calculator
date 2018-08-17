@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/daily_login_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/daily_login"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:id="@+id/daily_login_table_view"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_below="@+id/daily_login_text"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_vertical|center_horizontal|center">
+
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:text="@string/X"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:text="@string/X"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:text="@string/X"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:text="@string/xtal_150"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:text="@string/ticket_1"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:text="@string/X"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:text="@string/X"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:text="@string/X"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:text="@string/xtal_200"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:text="@string/ticket_1"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:text="@string/X"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:text="@string/X"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:text="@string/X"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:text="@string/xtal_250"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:text="@string/ticket_1"
+                android:textAlignment="center" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/daily_desct_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/daily_login_text"
+        android:layout_marginTop="-180dp"
+        android:text="You are now at day " />
+</RelativeLayout>

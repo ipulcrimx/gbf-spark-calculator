@@ -51,6 +51,11 @@ public class DailyLogin {
         day++;
     }
 
+    public int GetDay()
+    {
+        return day;
+    }
+
 
     public int GetReward()
     {

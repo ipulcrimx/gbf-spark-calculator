@@ -4,8 +4,10 @@
     <string name="totalSingleTicketsOwned">Total Single Tickets Owned</string>
     <string name="total10drawTicketsOwned">Total 10-draw Tickets Owned</string>
     <string name="result_desc">You need 0 more crystals or 0 more tickets to spark</string>
+    <string name="daily_login">Daily Login</string>
 
     <string name="zero">0</string>
+    <string name="X">X</string>
     <string name="total_10draw_ticket_for_spark">30</string>
     <string name="total_ticket_for_spark">300</string>
     <string name="crystal_for_spark">90000</string>
@@ -14,4 +16,10 @@
 
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name="xtal_150">150 Crystals</string>
+    <string name="xtal_200">200 Crystals</string>
+    <string name="ticket_1">1 Ticket</string>
+    <string name="xtal_250">250 Crystals</string>
+
+    <string name="daily_login_popup">You haven\'t set your daily day. Set it now</string>
 </resources>
