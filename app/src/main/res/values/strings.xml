@@ -5,12 +5,23 @@
     <string name="total10drawTicketsOwned">Total 10-draw Tickets Owned</string>
     <string name="result_desc">You need 0 more crystals or 0 more tickets to spark</string>
     <string name="daily_login">Daily Login</string>
+    <string name="spark_calculator">Spark Calculator</string>
+    <string name="side_stories">Side Stories</string>
 
     <string name="zero">0</string>
     <string name="X">X</string>
-    <string name="total_10draw_ticket_for_spark">30</string>
-    <string name="total_ticket_for_spark">300</string>
-    <string name="crystal_for_spark">90000</string>
+    <string name="two">2</string>
+    <string name="ten">10</string>
+
+    <string name="full_elixir_reward">x2</string>
+    <string name="half_elixir_reward">x10</string>
+    <string name="berries_reward">x30</string>
+    <string name="xtal100">x100</string>
+    <string name="xtal150">x150</string>
+    <string name="xtal200">x200</string>
+    <string name="ticket_reward">Ticket</string>
+    <string name="rupie_reward">x30,000</string>
+    <string name="chip_reward">x100,000</string>
 
     <string name="count">Count</string>
 
